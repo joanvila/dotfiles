@@ -57,6 +57,12 @@ Install ag:
 brew install the_silver_searcher
 ```
 
+Install the last vim version:
+
+```
+brew install vim --with-override-system-vi
+```
+
 ### Install vim plugin dependencies:
 
 Python linter:
@@ -87,3 +93,17 @@ Install the plugins:
 vim +PluginInstall +qall
 ```
 
+### Configure YouCompleteMe
+
+Install CMake (needed for YouCompleteMe):
+
+```
+brew install cmake
+```
+
+Configure YouCompleteMe:
+
+```
+cd ~/.vim/bundle/YouCompleteMe
+./install.py --js-completer
+```

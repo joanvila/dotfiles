@@ -16,6 +16,7 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'joshdick/onedark.vim'
 
 " General plugins
+Plugin 'valloric/youcompleteme'
 Plugin 'kien/ctrlp.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'airblade/vim-gitgutter'
@@ -27,6 +28,7 @@ Plugin 'haya14busa/incsearch.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-sleuth' " Automatic indentation
+Plugin 'jiangmiao/auto-pairs'
 
 " Python plugins
 Plugin 'hynek/vim-python-pep8-indent'
