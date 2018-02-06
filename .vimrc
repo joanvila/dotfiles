@@ -29,6 +29,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'tpope/vim-sleuth' " Automatic indentation
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'scrooloose/nerdcommenter'
 
 " Python plugins
 Plugin 'hynek/vim-python-pep8-indent'
@@ -151,3 +152,9 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " Easymotion
 map  <Leader>g <Plug>(easymotion-bd-w)
+
+" NERDCommenter
+let g:NERDSpaceDelims = 1 " Add spaces after comment delimiters by default
+let g:NERDCompactSexyComs = 1 " Use compact syntax for prettified multi-line comments
+let g:NERDCreateDefaultMappings = 0 " Remove all the default mappings because they use c wich is close buffer
+map <Leader>k <Plug>NERDCommenterToggle
